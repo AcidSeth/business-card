@@ -1,0 +1,43 @@
+<script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+<script>window.onload = function() {
+    document.body.className += " loaded";
+}</script>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <a target="_blank" href="https://www.linkedin.com/in/fabiodp">
+            <div class="card glitch fadein">
+                <img class="avatar" src="images/acidseth.jpg">
+                <div class="details">
+                    <h3>Fabio De Pasquale</h3>
+                    <h4>Frontend Developer</h4>
+                    <p>Salerno, IT</p>
+                </div>
+            </div>
+        </a>
+    </body>
+</html>
+
+<script>const element = document.querySelector('.glitch')
+PowerGlitch.glitch(element, {
+  "timing": {
+    "duration": 3250,
+    "iterations": 1,
+    "easing": "ease-out"
+  },
+  "glitchTimeSpan": {
+    "start": 0,
+    "end": 0.65
+  },
+  "shake": {
+    "velocity": 8
+  },
+  "slice": {
+    "count": 10,
+    "maxHeight": 0.4
+  }
+})
+</script>

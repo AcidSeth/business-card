@@ -1,0 +1,67 @@
+body {
+    margin: 40px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: 'Courier New', Courier, monospace;
+    background: #FFFDF3;
+    line-height: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+
+.card {
+    display: flex;
+    flex-flow: column wrap;
+
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #222;
+    color: #D805FF;
+    font-size: 1.15rem;
+    box-shadow: 10px 10px 0px #2CFF05;
+    border-right: 10px solid #FF052C;
+    border-bottom: 10px solid #FF052C;
+    animation: fadein 2s;
+    transition: 200ms ease-in-out;
+}
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+.card:hover {
+    box-shadow: -15px -15px #000DD5;
+    transition: 200ms ease-in-out;
+}
+
+.avatar {
+    max-width: 175px;
+    border: 3.5vw dashed #D805FF;
+    margin: 16px;
+    transition: 250ms;
+}
+.card:hover .avatar {
+    max-width: 175px;
+    border: 3vw dashed #2CFF05;
+    margin: 16px;
+    transition: 450ms;
+}
+
+.details {
+    padding: 8px 24px;
+    transition: 450ms;
+}
+.card:hover .details {
+    padding-right: 30px;
+    transition: 450ms;
+    color: #2CFF05;
+}
